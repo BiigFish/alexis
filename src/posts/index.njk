@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+title: Post Page
+description: This is the post Page
+---
+
+{% include 'components/header.njk' %}
+
+<div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4 ">
+    {%- for post in collections.posts | reverse -%}
+
+    <a href="{{ post.url }}" class="p-4 border rounded shadow hover:bg-gray-100">
+        <h3 class="text-lg font-bold">{{ post.data.title }}</h3>
+        <p class="text-gray-700">{{ post.data.description }}</p>
+    </a>
+
+    {%- endfor -%}
+</div>
