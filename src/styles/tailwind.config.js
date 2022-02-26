@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        textColor: 'rgb(100 116 139)',
         queenBlue: '#577590',
         tuscany: '#C3A29E',
         blond: '#FCF6B1',

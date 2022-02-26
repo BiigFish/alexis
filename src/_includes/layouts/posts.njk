@@ -4,7 +4,10 @@ layout: layouts/base.njk
 
 {% include 'components/header.njk' %}
 
-<div class="mt-6 max-w-prose mx-2 md:mx-auto">
+<div class="my-6 max-w-prose mx-2 md:mx-auto">
     <h1 class="font-bold text-lg mb-5">{{ title }}</h1>
     {{ content | safe }}
+</div>
+<div class="text-center m-5 font-semibold">
+    <a href="/" class="border-2 p-1.5 rounded border-black text-black transition duration-150 ease-in-out hover:bg-black hover:text-white">Back</a>
 </div>
