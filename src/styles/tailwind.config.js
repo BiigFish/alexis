@@ -4,8 +4,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        color1: 'red',
-        color2: 'green'
+        queenBlue: '#577590',
+        tuscany: '#C3A29E',
+        blond: '#FCF6B1',
+        uranianBlue: '#A4DEF9',
+        pistachio: '#8DC97E',
+      },
+      boxShadow: {
+        'old': '10px 10px LightGray'
       },
     },
   },
