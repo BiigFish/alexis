@@ -1,8 +1,9 @@
 <div x-data="{open: 'posts' }">
     <div class="space-x-4 text-center">
         <button x-on:click="open = 'posts'" class="text-red-600 text-3xl font-semibold">all </button>
-        {% for tag, color in categories %}
-            <button x-on:click="open = '{{tag}}'" class="text-{{color}} text-3xl font-semibold">{{tag}} </button>
+        {% for tag in categories %}
+            <button x-on:click="open = '{{tag}}'" class="text-3xl font-semibold">{{tag}} 
+            </button>
         {% endfor %}
     </div>
     <div class="mt-6 mx-10 grid grid-cols-2 md:grid-cols-4 gap-10 ">
@@ -16,8 +17,8 @@
                  x-transition:leave-end="opacity-0 scale-90"
                  x-transition:enter-start="opacity-0 scale-90"
                  class= "
-                    {% for topic, color in categories %}
-                        {% if topic in post.data.tags %} bg-{{color}} hover:text-{{color}} {% endif %}
+                    {% for color in colors | randomItem %}
+                        bg-{{color}} hover:text-{{color}}
                     {% endfor %}
                     aspect-square shadow-old hover:bg-textColor grid items-center duration-200">
 

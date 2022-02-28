@@ -17,6 +17,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode('version', function () {
     return now
   })
+  eleventyConfig.addFilter("randomItem", (arr) => {
+    arr.sort(() => {
+      return 0.5 - Math.random();
+    });
+    return arr.slice(0, 1);
+  });
   eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
     if (
       process.env.ELEVENTY_PRODUCTION &&

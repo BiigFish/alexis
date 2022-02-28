@@ -1,9 +1,7 @@
-{
-    "none": "gray-400",
-    "studying": "queenBlue",
-    "last weekend": "blond",
-    "toronto": "uranianBlue",
-    "restaurant": "pistachio",
-    "other": "tuscany"
+[   "studying",
+    "last weekend",
+    "toronto",
+    "restaurant",
+    "other"
     
-}
+]
