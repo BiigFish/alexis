@@ -27,4 +27,4 @@ collections:
         file: "src/_data/categories.json"
         widget: "list"
         fields:
-          - { label: "Tag", name: "tag", widget: "string" }
+          - { name: "tag", widget: "string" }
