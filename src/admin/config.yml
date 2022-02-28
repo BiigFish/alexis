@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway
+  repo: alexis
+  branch: main
+
+publish_mode: editorial_workflow
+
+media_folder: "src/img"
+public_folder: "/img"
+
+collections:
+  - label: "Posts"
+    name: "post"
+    folder: "src/posts"
+    create: true
+    editor:
+      preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "string" }
+      - { label: "Text", name: "body", widget: "markdown" }

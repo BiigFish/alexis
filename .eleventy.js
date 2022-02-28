@@ -9,6 +9,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     './node_modules/alpinejs/dist/cdn.js': './js/alpine.js',
   })
+  eleventyConfig.addPassthroughCopy({
+    "./src/admin/config.yml": "./admin/config.yml",
+  })
+  eleventyConfig.addPassthroughCopy("src/img");
 
   eleventyConfig.addShortcode('version', function () {
     return now
