@@ -23,6 +23,16 @@ module.exports = function (eleventyConfig) {
     });
     return arr.slice(0, 1);
   });
+  eleventyConfig.addCollection('tagsList', function (collectionApi) {
+    const tagsList = new Set()
+    collectionApi.getAll().map((item) => {
+      if (item.data.tags) {
+        // handle pages that don't have tags
+        item.data.tags.filter((tag) => !['yourtag'].includes(tag)).map((tag) => tagsList.add(tag))
+      }
+    })
+    return tagsList
+  })
   eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
     if (
       process.env.ELEVENTY_PRODUCTION &&
