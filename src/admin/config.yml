@@ -25,7 +25,7 @@ collections:
     files:
       - label: "About"
         name: "about"
-        file: "src/about"
+        file: "src/about.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - label: "About Image"
@@ -38,7 +38,7 @@ collections:
     files:
       - label: "Colors"
         name: "color"
-        file: "_includes/layouts/base.njk"
+        file: "src/_includes/layouts/base.njk"
         fields:
           - { label: "Text Color", name: "textColor", widget: "color", enableAlpha: true, allowInput: true }
           - { label: "Background Color", name: "backgroundColor", widget: "color", enableAlpha: true, allowInput: true }
