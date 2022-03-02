@@ -3,6 +3,7 @@ title: Studying
 description: This is a basic description of the post
 date: 2021-08-21
 tags: studying
+color: '#FCF6B1'
 ---
 Utopia Avenue is a book (and also a novel!) about the strangest band that came out of London in 1967. The book starts with their humble beginnings being a rag tag group of weirdos, and follows the band through their struggles and adventures towards stardom. The only caveat, it’s all made up from the mind of author David Mitchell.
 
