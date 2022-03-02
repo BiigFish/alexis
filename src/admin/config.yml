@@ -18,13 +18,5 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Tags", name: "tags", widget: "string" }
+      - { label: "Color", name: "color", widget: "color", enableAlpha: true, allowInput: true }
       - { label: "Text", name: "body", widget: "markdown" }
-  - label: "Tags"
-    name: "tags"
-    files:
-      - label: "Tags"
-        name: "tags"
-        file: "src/_data/categories.json"
-        widget: "list"
-        fields:
-          - { name: "tag", widget: "string" }
