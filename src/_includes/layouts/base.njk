@@ -1,3 +1,9 @@
+---
+textColor: '#2E2836'
+backgroundColor: '#FAF5F0'
+---
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,14 +13,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet">
+    <link rel="icon" href="/favicon.ico">
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script defer src="/js/alpine.js?v={% version %}"></script>
-    <title>{{ title }}</title>
+    <title>Alexis</title>
     {% if description %}
         <meta name="description" content="{{description}}" />
     {% endif %}
 </head>
-<body class="text-textColor font-oooh-baby bg-beige">
+<body class="text-textColor font-oooh-baby" style="background-color: {{ backgroundColor }}; color: {{ textColor }}">
     {{ content | safe }}
 </body>
 </html>

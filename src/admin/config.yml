@@ -20,3 +20,24 @@ collections:
       - { label: "Tags", name: "tags", widget: "string" }
       - { label: "Color", name: "color", widget: "color", enableAlpha: true, allowInput: true }
       - { label: "Text", name: "body", widget: "markdown" }
+- label: "About"
+    name: "about"
+    file: "src/about"
+    editor:
+      preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - label: "About Image"
+        name: "img"
+        widget: "image"
+        default: "/img/about.JPG"
+      - { label: "Text", name: "body", widget: "markdown" }
+  - label: "Colors"
+    name: "color"
+    file: "_includes/layouts/base.njk"
+    fields:
+      - { label: "Text Color", name: "textColor", widget: "color", enableAlpha: true, allowInput: true }
+      - { label: "Background Color", name: "backgroundColor", widget: "color", enableAlpha: true, allowInput: true }
+
+
+
