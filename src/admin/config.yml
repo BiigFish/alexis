@@ -20,11 +20,9 @@ collections:
       - { label: "Tags", name: "tags", widget: "string" }
       - { label: "Color", name: "color", widget: "color", enableAlpha: true, allowInput: true }
       - { label: "Text", name: "body", widget: "markdown" }
-- label: "About"
+  - label: "About"
     name: "about"
     file: "src/about"
-    editor:
-      preview: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - label: "About Image"
