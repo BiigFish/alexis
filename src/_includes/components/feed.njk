@@ -16,10 +16,10 @@
                  x-transition:leave-start="opacity-100 scale-100"
                  x-transition:leave-end="opacity-0 scale-90"
                  x-transition:enter-start="opacity-0 scale-90"
-                 class= "aspect-square shadow-old grid items-center duration-200"
+                 class= "aspect-square shadow-old grid items-center hover:scale-110 duration-200"
                  style="background-color: {{ post.data.color }};">
 
-                <h3 class="text-2xl font-bold text-center -rotate-12">{{ post.data.title }}</h3>
+                <h3 class="text-4xl font-bold text-center -rotate-12">{{ post.data.title }}</h3>
                 {# <p class="text-gray-700">{{ post.data.description }}</p> #}
             </a>
         {%- endfor -%}
